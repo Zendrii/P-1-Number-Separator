@@ -1,8 +1,10 @@
 # read external text file containing numbers
-with open('numbers.txt', 'r') as main_file, open('even.txt', 'w') as even_nmbrs, open('odd.txt', 'w'):
+with open('numbers.txt', 'r') as main_file, open('even.txt', 'w') as even_nmbrs, open('odd.txt', 'w') as odd_nmbrs:
     for line in main_file:
         integers = int(line)
-# check for even numbers
+        # check for even numbers
+        if integers % 2 ==0:
+            
 # create another text file containing the even numbers
 # check for odd numbers
 # create another text file containing the odd numbers 
