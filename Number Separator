@@ -11,3 +11,4 @@ with open('numbers.txt', 'r') as main_file, open('even.txt', 'w') as even_nmbrs,
         elif integers % 2 == 1:
             odd_int = str(integers)
             # create another text file containing the odd numbers 
+            odd_nmbrs.write(odd_int, '\n')
