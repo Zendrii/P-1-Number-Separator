@@ -3,8 +3,9 @@ with open('numbers.txt', 'r') as main_file, open('even.txt', 'w') as even_nmbrs,
     for line in main_file:
         integers = int(line)
         # check for even numbers
-        if integers % 2 ==0:
-            
-# create another text file containing the even numbers
-# check for odd numbers
-# create another text file containing the odd numbers 
+        if integers % 2 == 0:
+            even_int = str(integers)
+            # create another text file containing the even numbers
+            even_nmbrs.write(even_int, '\n')
+        # check for odd numbers
+            # create another text file containing the odd numbers 
