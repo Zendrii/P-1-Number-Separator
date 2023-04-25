@@ -6,9 +6,9 @@ with open('numbers.txt', 'r') as main_file, open('even.txt', 'w') as even_nmbrs,
         if integers % 2 == 0:
             even_int = str(integers)
             # create another text file containing the even numbers
-            even_nmbrs.write(even_int, '\n')
+            even_nmbrs.write(even_int + '\n')
         # check for odd numbers
         else:
             odd_int = str(integers)
             # create another text file containing the odd numbers 
-            odd_nmbrs.write(odd_int, '\n')
+            odd_nmbrs.write(odd_int + '\n')
