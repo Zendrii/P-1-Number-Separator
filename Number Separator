@@ -8,4 +8,6 @@ with open('numbers.txt', 'r') as main_file, open('even.txt', 'w') as even_nmbrs,
             # create another text file containing the even numbers
             even_nmbrs.write(even_int, '\n')
         # check for odd numbers
+        elif integers % 2 == 1:
+            odd_int = str(integers)
             # create another text file containing the odd numbers 
